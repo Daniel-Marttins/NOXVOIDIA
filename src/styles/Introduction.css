@@ -1,0 +1,150 @@
+:root {
+    /*FONTS */
+    --first-font: 'Abel', sans-serif;
+    --second-font: 'DotGothic16', sans-serif;
+    --thirdy-font: 'Tektur', sans-serif;
+
+    /*COLORS  */
+    --first-color: #18162C;
+    --second-color: #18162C;
+    --third-color: #58354B; 
+    --fourth-color: #9A5266; 
+    --fifth-color: #c76774;
+    --default-color: #ffff;
+    --opacity-default-color: #ffffff62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--first-font);
+    overflow: hidden;
+}
+
+.body-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #18162C;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.body-introduction::before {
+    content: '';
+    position: absolute;
+    background: rgb(255, 136, 0);
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #18162C;
+    clip-path: circle(0% at 0 50%);
+    object-fit: cover;
+}
+
+section.active {
+    width: 100vw;
+    height: 100vh;
+    clip-path: circle(150.0% at 0 50%);
+    transition: all 0.4s ease-in;
+    transition-property: clip-path;
+}
+
+/*GLOBAL SECTIONS STYLES */
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    bottom: 3rem;
+    right: 3rem;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+
+.line-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    bottom: 3rem;
+    right: 5rem;
+}
+
+.line-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+    height: 50%;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+
+.line-buttons button span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.line-buttons button:hover {
+    transform: translateY(5px);
+    color: orangered;
+    text-shadow: 1px 1px 5px rgba(255, 68, 0, 0.575);
+    border: 1px solid orangered;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .line {
+        bottom: 2.3rem;
+    }
+
+    .line-buttons {
+        width: 80%;
+        right: 4rem;
+        bottom: 1.5rem;
+    }
+
+    .line-buttons button {
+        width: 22%;
+        font-size: 10px;
+    }
+
+    .line-buttons button span {
+        display: none;
+    }
+}
