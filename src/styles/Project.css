@@ -28,6 +28,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    z-index: 999;
 }
 
 .column-projects {
@@ -51,6 +52,8 @@
     border-radius: 5px;
     background-color: white;
     z-index: 999;
+    background: linear-gradient(to top right, #322e61, #322e61, #18162C, transparent);
+    object-fit: cover;
 }
 
 .project h1 {
@@ -74,7 +77,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 000;
 }
 
 .img-project {

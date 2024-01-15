@@ -119,10 +119,12 @@
     position: absolute;
     color: rgba(255, 136, 0, 0.623);
     transition: all 0.4s ease-in-out;
+    z-index: 999;
 }
 
 #toggle:hover {
     color: rgb(255, 136, 0);
+    z-index: 999;
 }
 
 .square img {

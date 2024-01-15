@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import img1 from '../imgs/pxfuel.jpg';
-import img2 from '../imgs/pxfuel (1).jpg';
-import img3 from '../imgs/pxfuel (2).jpg';
 import '../styles/Project.css';
 
 const  ProjectTab = () => {
@@ -46,10 +43,8 @@ const  ProjectTab = () => {
                             <span>Gerenciador de Recursos</span>
                         </h1>
 
-                        <img src={img1}></img>
-
                         <div className={`project-descript ${activeDescriptProj === 1 ? 'active' : ''}`} onClick={() => handleDescript(1)}>
-                            <span className="material-symbols-outlined">visibility</span>
+                            <span className="material-symbols-outlined" title="Visualizar descrição">visibility</span>
                         </div>
                     </div>
                     <div className="project">
@@ -61,10 +56,8 @@ const  ProjectTab = () => {
                             <span>Descrição curta projeto 2</span>
                         </h1>
 
-                        <img src={img2}></img>
-
                         <div className={`project-descript ${activeDescriptProj === 2 ? 'active' : ''}`} onClick={() => handleDescript(2)}>
-                            <span className="material-symbols-outlined">visibility</span>
+                            <span className="material-symbols-outlined" title="Visualizar descrição">visibility</span>
                         </div>
                     </div>
                     <div className="project">
@@ -76,10 +69,8 @@ const  ProjectTab = () => {
                             <span>Descrição curta projeto 3</span>
                         </h1>
 
-                        <img src={img3}></img>
-
                         <div className={`project-descript ${activeDescriptProj === 3 ? 'active' : ''}`} onClick={() => handleDescript(3)}>
-                            <span className="material-symbols-outlined">visibility</span>
+                            <span className="material-symbols-outlined" title="Visualizar descrição">visibility</span>
                         </div>
                     </div>
                 </div>

@@ -10,11 +10,9 @@ import '../styles/Presentation.css';
 const PresentationTab = () => {
 
     const[activeSquare, setActiveSquare] = useState();
-    const[icon, setIcon] = useState();
 
     const handleActiveSquare = () => {
 
-        const iconLeft = 'arrow_circle_left';
         const toggleIcon = document.querySelector('#toggle');
 
         setActiveSquare(!activeSquare);

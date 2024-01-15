@@ -101,6 +101,7 @@ section.active {
     color: white;
     font-weight: 600;
     transition: all 0.1s ease-in-out;
+    z-index: 999;
 }
 
 .line-buttons button span {
